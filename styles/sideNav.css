@@ -1,0 +1,105 @@
+.app__sideNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--navBar-background);
+  width: 60px;
+  height: 100%;
+}
+.app__sideNav-top,
+.app__sideNav-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+}
+
+.app__sideNav-top_btn,
+.app__sideNav-bottom_btn {
+  position: relative;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  margin-bottom: 0.6rem;
+}
+
+.app__sideNav-top_btn:hover,
+.app__sideNav-bottom_btn:hover {
+  background-color: var(--backgroundDeeper);
+}
+.app__sideNav-top_btn,
+.app__sideNav-bottom_btn svg {
+  color: var(--navbar-icon-color);
+}
+
+.app__sideNav-top_btn:first-child {
+  position: relative;
+  background-color: var(--backgroundDeeper);
+}
+.app__sideNav-top_btn:first-child::after {
+  position: absolute;
+  content: "35";
+  top: -6px;
+  right: -5px;
+  padding: 0.4em;
+  background-color: var(--unread-marker-background);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.app__sideNav-popup {
+  background-color: var(--darkGrey);
+  width: fit-content;
+  border-radius: 20px;
+  padding: 5px 15px;
+  position: absolute;
+  left: 45px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  z-index: 10;
+}
+.app__sideNav-popup span {
+  color: var(--white);
+  font-size: 12px;
+}
+
+.app__sideNav-top_btn:hover .app__sideNav-popup,
+.app__sideNav-bottom_btn:hover .app__sideNav-popup {
+  opacity: 1;
+  visibility: visible;
+  -webkit-animation: scale-up-left 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-left 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.app__sideNav-hr {
+  height: 1px;
+  border-bottom-style: none;
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+  width: 24px;
+  margin-top: 8px;
+  margin-bottom: 1rem;
+}
+
+.app__sideNav-bottom_btn.profile {
+  padding: none;
+  width: 40px;
+  height: 40px;
+}
+.app__sideNav-bottom_btn.profile img {
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  object-fit: cover;
+}

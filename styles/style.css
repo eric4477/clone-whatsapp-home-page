@@ -1,1 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
+:root {
+  --background: #eae6df;
+  --backgroundDeeper: #d1d7db;
+  --navBar-background: #f0f2f5;
+  --navbar-icon-color: #5c5c5c;
+  --unread-marker-background: #25d366;
+  --white: #fff;
+  --darkGrey: #3d3d3d;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  background-color: #eae6df;
+  background-image: linear-gradient(
+    to bottom,
+    var(--background),
+    var(--backgroundDeeper)
+  );
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 127px;
+  background-color: #00a884;
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  z-index: 2;
+  background-color: #efeae2;
+}
+
+/* animations */
+
+@-webkit-keyframes scale-up-left {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+  }
+}
+@keyframes scale-up-left {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+  }
+}
+
+/* animations */
