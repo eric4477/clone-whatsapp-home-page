@@ -234,6 +234,10 @@
   padding: 1.1rem 0;
 }
 
+.message__wrapper .lock {
+  margin-right: 0.3rem;
+}
+
 .message__wrapper span {
   color: #027eb5;
   cursor: pointer;

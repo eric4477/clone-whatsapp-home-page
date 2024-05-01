@@ -44,7 +44,7 @@
 }
 .app__sideNav .app__sideNav-top_btn:first-child::after {
   position: absolute;
-  content: "35";
+  content: "10";
   top: -6px;
   right: -5px;
   padding: 0.4em;
