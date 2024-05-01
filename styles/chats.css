@@ -1,0 +1,240 @@
+.app__chats {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 30%;
+  max-width: 30%;
+  background-color: var(--white);
+  padding: 0.6rem 0;
+  position: relative;
+}
+
+.app__chats-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.app__chats-header h1 {
+  line-height: 32px;
+  font-size: 1.4rem;
+  pointer-events: none;
+}
+
+.app__chats-header .buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.app__chats-search_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 0.8rem;
+  padding-right: 0.3rem;
+  gap: 5px;
+  margin-top: 1rem;
+}
+
+.app__chats-search_container .input__wrapper {
+  position: relative;
+  flex-grow: 1;
+  border-radius: 10px;
+}
+
+.app__chats-search_container .input__wrapper .app__sideNav-top_btn {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+}
+.app__chats-search_container .input__wrapper input {
+  background-color: var(--navBar-background);
+  border: none;
+  outline: none;
+  padding: 0.6rem 0;
+  padding-left: 4rem;
+  padding-right: 2rem;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 10px;
+}
+.app__chats-search_container .input__wrapper input::placeholder {
+  font-weight: 400;
+}
+
+.app__sideNav-top_btn.arrow {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.app__chats-search_container:focus-within .app__sideNav-top_btn.search {
+  opacity: 0;
+  visibility: hidden;
+}
+.app__chats-search_container:focus-within .app__sideNav-top_btn.arrow {
+  opacity: 1;
+  visibility: visible;
+}
+
+.app__chats-contacts {
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-top: 1px solid #e9edef;
+  position: absolute;
+  bottom: 0;
+  top: 110px;
+  right: 0;
+  left: 0;
+}
+
+.app__chats-contacts_contact {
+  padding-left: 0.8rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 72px;
+  cursor: pointer;
+}
+
+.app__chats-contacts_contact .contact__image {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.app__chats-contacts_contact .contact__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.app__chats-contacts_contact .contact__image.profile-cover img {
+  width: calc(100% - 0.4rem);
+  height: calc(100% - 0.4rem);
+}
+
+.app__chats-contacts_contact .contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  width: 85%;
+  padding-top: 1.2rem;
+  padding-bottom: 0.7rem;
+  flex-grow: 1;
+  border-bottom: 1px solid var(--contact-hover-color);
+  position: relative;
+}
+
+.app__chats-contacts_contact .contact__info.last-child {
+  border: none;
+}
+.app__chats-contacts_contact.last-child {
+  border-bottom: 1px solid var(--contact-hover-color);
+}
+
+.contact__info .message .tick {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.2rem;
+  padding-bottom: 0.145rem;
+}
+
+.contact__info .message {
+  display: flex;
+  align-items: flex-end;
+}
+
+.contact__info .message p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  color: var(--date-color);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.contact__info .message .notify {
+  padding: 0.2rem 0.4rem;
+  background-color: var(--unread-marker-background);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.contact__info .message p.message-bold {
+  color: #3b4a54;
+  font-weight: 500;
+}
+
+.contact__info .date {
+  position: absolute;
+  right: 10px;
+  top: 22px;
+}
+
+.contact__info .date p {
+  font-size: 12px;
+  color: var(--date-color);
+}
+
+.contact__info .message .arrow {
+  position: relative;
+  min-width: 1rem;
+  transition: all 0.1s;
+}
+
+.contact__info .message .arrow svg {
+  position: absolute;
+  right: -0.3rem;
+  bottom: 0.05rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+}
+
+.app__chats-contacts_contact:hover {
+  background-color: var(--contact-hover-color);
+}
+
+.app__chats-contacts_contact:hover .arrow {
+  min-width: 2rem;
+}
+.app__chats-contacts_contact:hover .arrow svg {
+  right: 0.3rem;
+  opacity: 1;
+  visibility: visible;
+}
+
+.message__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  padding: 1.1rem 0;
+}
+
+.message__wrapper span {
+  color: #027eb5;
+  cursor: pointer;
+}

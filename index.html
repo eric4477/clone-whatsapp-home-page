@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/sideNav.css" />
+    <link rel="stylesheet" href="styles/chats.css" />
     <title>WhatsApp</title>
   </head>
   <body>
@@ -44,7 +45,7 @@
               <span>Chats</span>
             </div>
           </div>
-          <div class="app__sideNav-top_btn">
+          <div class="app__sideNav-top_btn hover">
             <svg
               viewBox="0 0 24 24"
               height="24"
@@ -64,7 +65,7 @@
               <span>Communities</span>
             </div>
           </div>
-          <div class="app__sideNav-top_btn">
+          <div class="app__sideNav-top_btn hover">
             <svg
               viewBox="0 0 24 24"
               height="24"
@@ -101,7 +102,7 @@
               <span>Status</span>
             </div>
           </div>
-          <div class="app__sideNav-top_btn">
+          <div class="app__sideNav-top_btn hover">
             <svg
               viewBox="0 0 24 24"
               height="24"
@@ -132,7 +133,7 @@
             </div>
           </div>
           <hr class="app__sideNav-hr" />
-          <div class="app__sideNav-top_btn">
+          <div class="app__sideNav-top_btn hover">
             <svg
               viewBox="0 0 20 20"
               height="22"
@@ -150,7 +151,7 @@
               <span>Archived</span>
             </div>
           </div>
-          <div class="app__sideNav-top_btn">
+          <div class="app__sideNav-top_btn hover">
             <svg
               viewBox="0 0 24 24"
               height="22"
@@ -172,7 +173,7 @@
           </div>
         </div>
         <div class="app__navbar-bottom">
-          <div class="app__sideNav-bottom_btn">
+          <div class="app__sideNav-bottom_btn hover">
             <svg
               viewBox="0 0 24 24"
               height="26"
@@ -207,11 +208,684 @@
               <span>Settings</span>
             </div>
           </div>
-          <div class="app__sideNav-bottom_btn profile">
-            <img src="images/account.jpg" alt="profile" />
+          <div class="app__sideNav-bottom_btn profile hover">
+            <img src="images/icons8-account-96.png" alt="profile" />
             <div class="app__sideNav-popup">
               <span>Profile</span>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="app__chats">
+        <div class="app__chats-header">
+          <h1>Chats</h1>
+          <div class="buttons">
+            <div class="app__sideNav-top_btn hover">
+              <svg
+                viewBox="0 0 24 24"
+                height="24"
+                width="24"
+                preserveAspectRatio="xMidYMid meet"
+                class=""
+                fill="none"
+              >
+                <path
+                  d="M9.53277 12.9911H11.5086V14.9671C11.5086 15.3999 11.7634 15.8175 12.1762 15.9488C12.8608 16.1661 13.4909 15.6613 13.4909 15.009V12.9911H15.4672C15.9005 12.9911 16.3181 12.7358 16.449 12.3226C16.6659 11.6381 16.1606 11.0089 15.5086 11.0089H13.4909V9.03332C13.4909 8.60007 13.2361 8.18252 12.8233 8.05119C12.1391 7.83391 11.5086 8.33872 11.5086 8.991V11.0089H9.49088C8.83941 11.0089 8.33411 11.6381 8.55097 12.3226C8.68144 12.7358 9.09947 12.9911 9.53277 12.9911Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0.944298 5.52617L2.99998 8.84848V17.3333C2.99998 18.8061 4.19389 20 5.66665 20H19.3333C20.8061 20 22 18.8061 22 17.3333V6.66667C22 5.19391 20.8061 4 19.3333 4H1.79468C1.01126 4 0.532088 4.85997 0.944298 5.52617ZM4.99998 8.27977V17.3333C4.99998 17.7015 5.29845 18 5.66665 18H19.3333C19.7015 18 20 17.7015 20 17.3333V6.66667C20 6.29848 19.7015 6 19.3333 6H3.58937L4.99998 8.27977Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <div class="app__sideNav-top_btn hover">
+              <svg
+                viewBox="0 0 24 24"
+                height="24"
+                width="24"
+                preserveAspectRatio="xMidYMid meet"
+                class=""
+                version="1.1"
+                x="0px"
+                y="0px"
+                enable-background="new 0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12,7c1.104,0,2-0.896,2-2c0-1.105-0.895-2-2-2c-1.104,0-2,0.894-2,2 C10,6.105,10.895,7,12,7z M12,9c-1.104,0-2,0.894-2,2c0,1.104,0.895,2,2,2c1.104,0,2-0.896,2-2C13.999,9.895,13.104,9,12,9z M12,15 c-1.104,0-2,0.894-2,2c0,1.104,0.895,2,2,2c1.104,0,2-0.896,2-2C13.999,15.894,13.104,15,12,15z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="app__chats-search_container">
+          <div class="input__wrapper">
+            <div class="app__sideNav-top_btn search">
+              <svg
+                viewBox="0 0 24 24"
+                height="24"
+                width="24"
+                preserveAspectRatio="xMidYMid meet"
+                class=""
+                version="1.1"
+                x="0px"
+                y="0px"
+                enable-background="new 0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M15.009,13.805h-0.636l-0.22-0.219c0.781-0.911,1.256-2.092,1.256-3.386 c0-2.876-2.332-5.207-5.207-5.207c-2.876,0-5.208,2.331-5.208,5.207s2.331,5.208,5.208,5.208c1.293,0,2.474-0.474,3.385-1.255 l0.221,0.22v0.635l4.004,3.999l1.194-1.195L15.009,13.805z M10.201,13.805c-1.991,0-3.605-1.614-3.605-3.605 s1.614-3.605,3.605-3.605s3.605,1.614,3.605,3.605S12.192,13.805,10.201,13.805z"
+                ></path>
+              </svg>
+            </div>
+            <div class="app__sideNav-top_btn arrow">
+              <svg
+                fill="#25d366"
+                height="20px"
+                width="20px"
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 26.23 26.23"
+                xml:space="preserve"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g>
+                    <g id="c107_arrow">
+                      <path
+                        d="M21.561,25.849v-5.877l-8.308-6.557c-0.186-0.146-0.186-0.453,0-0.6l8.308-6.555V0.38c0-0.145-0.08-0.279-0.209-0.343 c-0.137-0.063-0.293-0.044-0.406,0.046L4.805,12.815c-0.183,0.146-0.183,0.453,0,0.6l16.14,12.734 c0.113,0.089,0.27,0.106,0.406,0.043C21.48,26.129,21.561,25.995,21.561,25.849z"
+                      ></path>
+                    </g>
+                    <g id="Capa_1_12_"></g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <input type="text" placeholder="Search" />
+          </div>
+          <div class="app__sideNav-top_btn">
+            <svg
+              viewBox="0 0 24 24"
+              height="20"
+              width="20"
+              preserveAspectRatio="xMidYMid meet"
+              class=""
+              fill="none"
+            >
+              <path
+                d="M11 18C10.7167 18 10.4792 17.9042 10.2875 17.7125C10.0958 17.5208 10 17.2833 10 17C10 16.7167 10.0958 16.4792 10.2875 16.2875C10.4792 16.0958 10.7167 16 11 16H13C13.2833 16 13.5208 16.0958 13.7125 16.2875C13.9042 16.4792 14 16.7167 14 17C14 17.2833 13.9042 17.5208 13.7125 17.7125C13.5208 17.9042 13.2833 18 13 18H11ZM7 13C6.71667 13 6.47917 12.9042 6.2875 12.7125C6.09583 12.5208 6 12.2833 6 12C6 11.7167 6.09583 11.4792 6.2875 11.2875C6.47917 11.0958 6.71667 11 7 11H17C17.2833 11 17.5208 11.0958 17.7125 11.2875C17.9042 11.4792 18 11.7167 18 12C18 12.2833 17.9042 12.5208 17.7125 12.7125C17.5208 12.9042 17.2833 13 17 13H7ZM4 8C3.71667 8 3.47917 7.90417 3.2875 7.7125C3.09583 7.52083 3 7.28333 3 7C3 6.71667 3.09583 6.47917 3.2875 6.2875C3.47917 6.09583 3.71667 6 4 6H20C20.2833 6 20.5208 6.09583 20.7125 6.2875C20.9042 6.47917 21 6.71667 21 7C21 7.28333 20.9042 7.52083 20.7125 7.7125C20.5208 7.90417 20.2833 8 20 8H4Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="app__chats-contacts">
+          <div class="app__chats-contacts_contact">
+            <div class="contact__image">
+              <img src="images/face1.avif" alt="image" />
+            </div>
+            <div class="contact__info">
+              <div class="name"><p>Noah Wilson</p></div>
+              <div class="message">
+                <span class="tick">
+                  <svg
+                    viewBox="0 0 18 18"
+                    height="18"
+                    width="18"
+                    preserveAspectRatio="xMidYMid meet"
+                    class=""
+                    version="1.1"
+                    x="0px"
+                    y="0px"
+                    enable-background="new 0 0 18 18"
+                  >
+                    <path
+                      fill="#8696a0"
+                      d="M17.394,5.035l-0.57-0.444c-0.188-0.147-0.462-0.113-0.609,0.076l-6.39,8.198 c-0.147,0.188-0.406,0.206-0.577,0.039l-0.427-0.388c-0.171-0.167-0.431-0.15-0.578,0.038L7.792,13.13 c-0.147,0.188-0.128,0.478,0.043,0.645l1.575,1.51c0.171,0.167,0.43,0.149,0.577-0.039l7.483-9.602 C17.616,5.456,17.582,5.182,17.394,5.035z M12.502,5.035l-0.57-0.444c-0.188-0.147-0.462-0.113-0.609,0.076l-6.39,8.198 c-0.147,0.188-0.406,0.206-0.577,0.039l-2.614-2.556c-0.171-0.167-0.447-0.164-0.614,0.007l-0.505,0.516 c-0.167,0.171-0.164,0.447,0.007,0.614l3.887,3.8c0.171,0.167,0.43,0.149,0.577-0.039l7.483-9.602 C12.724,5.456,12.69,5.182,12.502,5.035z"
+                    ></path>
+                  </svg>
+                </span>
+                <p>
+                  Hi Noah, have you heard about the new movie coming out this
+                  weekend?
+                </p>
+                <span class="arrow">
+                  <svg
+                    viewBox="0 0 19 20"
+                    height="20"
+                    width="19"
+                    preserveAspectRatio="xMidYMid meet"
+                    class=""
+                    version="1.1"
+                    x="0px"
+                    y="0px"
+                  >
+                    <path
+                      fill="#8696a0"
+                      d="M3.8,6.7l5.7,5.7l5.7-5.7l1.6,1.6l-7.3,7.2L2.2,8.3L3.8,6.7z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="date">
+                <p>12:59 a.m.</p>
+              </div>
+            </div>
+          </div>
+          <div class="app__chats-contacts_contact">
+            <div class="contact__image">
+              <img src="images/face3.jpg" alt="image" />
+            </div>
+            <div class="contact__info">
+              <div class="name"><p class="bold">Sophia Brown</p></div>
+              <div class="message">
+                <p class="message-bold">
+                  Not yet, but I'm almost done. I'll send it over to you once
+                  it's ready.
+                </p>
+                <span class="notify">1</span>
+                <span class="arrow">
+                  <svg
+                    viewBox="0 0 19 20"
+                    height="20"
+                    width="19"
+                    preserveAspectRatio="xMidYMid meet"
+                    class=""
+                    version="1.1"
+                    x="0px"
+                    y="0px"
+                  >
+                    <path
+                      fill="#8696a0"
+                      d="M3.8,6.7l5.7,5.7l5.7-5.7l1.6,1.6l-7.3,7.2L2.2,8.3L3.8,6.7z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="date">
+                <p>Yesterday</p>
+              </div>
+            </div>
+          </div>
+          <div class="app__chats-contacts_contact active">
+            <div class="contact__image profile-cover">
+              <img src="images/icons8-account-96.png" alt="image" />
+            </div>
+            <div class="contact__info">
+              <div class="name"><p>Olivia Martinez</p></div>
+              <div class="message">
+                <span class="tick">
+                  <svg
+                    viewBox="0 0 18 18"
+                    height="18"
+                    width="18"
+                    preserveAspectRatio="xMidYMid meet"
+                    class=""
+                    version="1.1"
+                    x="0px"
+                    y="0px"
+                    enable-background="new 0 0 18 18"
+                  >
+                    <path
+                      fill="#53bdeb"
+                      d="M17.394,5.035l-0.57-0.444c-0.188-0.147-0.462-0.113-0.609,0.076l-6.39,8.198 c-0.147,0.188-0.406,0.206-0.577,0.039l-0.427-0.388c-0.171-0.167-0.431-0.15-0.578,0.038L7.792,13.13 c-0.147,0.188-0.128,0.478,0.043,0.645l1.575,1.51c0.171,0.167,0.43,0.149,0.577-0.039l7.483-9.602 C17.616,5.456,17.582,5.182,17.394,5.035z M12.502,5.035l-0.57-0.444c-0.188-0.147-0.462-0.113-0.609,0.076l-6.39,8.198 c-0.147,0.188-0.406,0.206-0.577,0.039l-2.614-2.556c-0.171-0.167-0.447-0.164-0.614,0.007l-0.505,0.516 c-0.167,0.171-0.164,0.447,0.007,0.614l3.887,3.8c0.171,0.167,0.43,0.149,0.577-0.039l7.483-9.602 C12.724,5.456,12.69,5.182,12.502,5.035z"
+                    ></path>
+                  </svg>
+                </span>
+                <p>See you then!</p>
+                <span class="arrow">
+                  <svg
+                    viewBox="0 0 19 20"
+                    height="20"
+                    width="19"
+                    preserveAspectRatio="xMidYMid meet"
+                    class=""
+                    version="1.1"
+                    x="0px"
+                    y="0px"
+                  >
+                    <path
+                      fill="#8696a0"
+                      d="M3.8,6.7l5.7,5.7l5.7-5.7l1.6,1.6l-7.3,7.2L2.2,8.3L3.8,6.7z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="date">
+                <p>Thursday</p>
+              </div>
+            </div>
+          </div>
+          <div class="app__chats-contacts_contact">
+            <div class="contact__image profile-cover">
+              <img src="images/icons8-account-96.png" alt="image" />
+            </div>
+            <div class="contact__info">
+              <div class="name"><p class="bold">Elijah Lopez</p></div>
+              <div class="message">
+                <p class="message-bold">
+                  I'm having some issues with my laptop. I was hoping you could
+                  take a look at it.
+                </p>
+                <span class="notify">5</span>
+                <span class="arrow">
+                  <svg
+                    viewBox="0 0 19 20"
+                    height="20"
+                    width="19"
+                    preserveAspectRatio="xMidYMid meet"
+                    class=""
+                    version="1.1"
+                    x="0px"
+                    y="0px"
+                  >
+                    <path
+                      fill="#8696a0"
+                      d="M3.8,6.7l5.7,5.7l5.7-5.7l1.6,1.6l-7.3,7.2L2.2,8.3L3.8,6.7z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="date">
+                <p>Thursday</p>
+              </div>
+            </div>
+          </div>
+          <div class="app__chats-contacts_contact">
+            <div class="contact__image">
+              <img src="images/face2.avif" alt="image" />
+            </div>
+            <div class="contact__info">
+              <div class="name"><p>Lucas Thomas</p></div>
+              <div class="message">
+                <span class="tick">
+                  <svg
+                    viewBox="0 0 18 18"
+                    height="18"
+                    width="18"
+                    preserveAspectRatio="xMidYMid meet"
+                    class=""
+                    version="1.1"
+                    x="0px"
+                    y="0px"
+                    enable-background="new 0 0 18 18"
+                  >
+                    <path
+                      fill="#8696a0"
+                      d="M17.394,5.035l-0.57-0.444c-0.188-0.147-0.462-0.113-0.609,0.076l-6.39,8.198 c-0.147,0.188-0.406,0.206-0.577,0.039l-0.427-0.388c-0.171-0.167-0.431-0.15-0.578,0.038L7.792,13.13 c-0.147,0.188-0.128,0.478,0.043,0.645l1.575,1.51c0.171,0.167,0.43,0.149,0.577-0.039l7.483-9.602 C17.616,5.456,17.582,5.182,17.394,5.035z M12.502,5.035l-0.57-0.444c-0.188-0.147-0.462-0.113-0.609,0.076l-6.39,8.198 c-0.147,0.188-0.406,0.206-0.577,0.039l-2.614-2.556c-0.171-0.167-0.447-0.164-0.614,0.007l-0.505,0.516 c-0.167,0.171-0.164,0.447,0.007,0.614l3.887,3.8c0.171,0.167,0.43,0.149,0.577-0.039l7.483-9.602 C12.724,5.456,12.69,5.182,12.502,5.035z"
+                    ></path>
+                  </svg>
+                </span>
+                <p>do you have any plans for the weekend?</p>
+                <span class="arrow">
+                  <svg
+                    viewBox="0 0 19 20"
+                    height="20"
+                    width="19"
+                    preserveAspectRatio="xMidYMid meet"
+                    class=""
+                    version="1.1"
+                    x="0px"
+                    y="0px"
+                  >
+                    <path
+                      fill="#8696a0"
+                      d="M3.8,6.7l5.7,5.7l5.7-5.7l1.6,1.6l-7.3,7.2L2.2,8.3L3.8,6.7z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="date">
+                <p>Tuesday</p>
+              </div>
+            </div>
+          </div>
+          <div class="app__chats-contacts_contact">
+            <div class="contact__image profile-cover">
+              <img src="images/icons8-account-96.png" alt="image" />
+            </div>
+            <div class="contact__info">
+              <div class="name"><p>Ava Hernandez</p></div>
+              <div class="message">
+                <span class="tick">
+                  <svg
+                    viewBox="0 0 18 18"
+                    height="18"
+                    width="18"
+                    preserveAspectRatio="xMidYMid meet"
+                    class=""
+                    version="1.1"
+                    x="0px"
+                    y="0px"
+                    enable-background="new 0 0 18 18"
+                  >
+                    <path
+                      fill="#53bdeb"
+                      d="M17.394,5.035l-0.57-0.444c-0.188-0.147-0.462-0.113-0.609,0.076l-6.39,8.198 c-0.147,0.188-0.406,0.206-0.577,0.039l-0.427-0.388c-0.171-0.167-0.431-0.15-0.578,0.038L7.792,13.13 c-0.147,0.188-0.128,0.478,0.043,0.645l1.575,1.51c0.171,0.167,0.43,0.149,0.577-0.039l7.483-9.602 C17.616,5.456,17.582,5.182,17.394,5.035z M12.502,5.035l-0.57-0.444c-0.188-0.147-0.462-0.113-0.609,0.076l-6.39,8.198 c-0.147,0.188-0.406,0.206-0.577,0.039l-2.614-2.556c-0.171-0.167-0.447-0.164-0.614,0.007l-0.505,0.516 c-0.167,0.171-0.164,0.447,0.007,0.614l3.887,3.8c0.171,0.167,0.43,0.149,0.577-0.039l7.483-9.602 C12.724,5.456,12.69,5.182,12.502,5.035z"
+                    ></path>
+                  </svg>
+                </span>
+                <p>
+                  Hey Ava! Yes, I saw the posters. I'm thinking of buying
+                  tickets. Are you interested?
+                </p>
+                <span class="arrow">
+                  <svg
+                    viewBox="0 0 19 20"
+                    height="20"
+                    width="19"
+                    preserveAspectRatio="xMidYMid meet"
+                    class=""
+                    version="1.1"
+                    x="0px"
+                    y="0px"
+                  >
+                    <path
+                      fill="#8696a0"
+                      d="M3.8,6.7l5.7,5.7l5.7-5.7l1.6,1.6l-7.3,7.2L2.2,8.3L3.8,6.7z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="date">
+                <p>Monday</p>
+              </div>
+            </div>
+          </div>
+          <div class="app__chats-contacts_contact">
+            <div class="contact__image profile-cover">
+              <img src="images/icons8-account-96.png" alt="image" />
+            </div>
+            <div class="contact__info">
+              <div class="name"><p class="bold">Ethan Taylor</p></div>
+              <div class="message">
+                <p class="message-bold">
+                  That sounds like fun! Count me in. I'll bring some snacks.
+                </p>
+                <span class="notify">3</span>
+                <span class="arrow">
+                  <svg
+                    viewBox="0 0 19 20"
+                    height="20"
+                    width="19"
+                    preserveAspectRatio="xMidYMid meet"
+                    class=""
+                    version="1.1"
+                    x="0px"
+                    y="0px"
+                  >
+                    <path
+                      fill="#8696a0"
+                      d="M3.8,6.7l5.7,5.7l5.7-5.7l1.6,1.6l-7.3,7.2L2.2,8.3L3.8,6.7z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="date">
+                <p>Thursday</p>
+              </div>
+            </div>
+          </div>
+          <div class="app__chats-contacts_contact">
+            <div class="contact__image profile-cover">
+              <img src="images/icons8-account-96.png" alt="image" />
+            </div>
+            <div class="contact__info">
+              <div class="name"><p>Mia Garcia</p></div>
+              <div class="message">
+                <span class="tick">
+                  <svg
+                    viewBox="0 0 18 18"
+                    height="18"
+                    width="18"
+                    preserveAspectRatio="xMidYMid meet"
+                    class=""
+                    version="1.1"
+                    x="0px"
+                    y="0px"
+                    enable-background="new 0 0 18 18"
+                  >
+                    <path
+                      fill="#53bdeb"
+                      d="M17.394,5.035l-0.57-0.444c-0.188-0.147-0.462-0.113-0.609,0.076l-6.39,8.198 c-0.147,0.188-0.406,0.206-0.577,0.039l-0.427-0.388c-0.171-0.167-0.431-0.15-0.578,0.038L7.792,13.13 c-0.147,0.188-0.128,0.478,0.043,0.645l1.575,1.51c0.171,0.167,0.43,0.149,0.577-0.039l7.483-9.602 C17.616,5.456,17.582,5.182,17.394,5.035z M12.502,5.035l-0.57-0.444c-0.188-0.147-0.462-0.113-0.609,0.076l-6.39,8.198 c-0.147,0.188-0.406,0.206-0.577,0.039l-2.614-2.556c-0.171-0.167-0.447-0.164-0.614,0.007l-0.505,0.516 c-0.167,0.171-0.164,0.447,0.007,0.614l3.887,3.8c0.171,0.167,0.43,0.149,0.577-0.039l7.483-9.602 C12.724,5.456,12.69,5.182,12.502,5.035z"
+                    ></path>
+                  </svg>
+                </span>
+                <p>Sounds good. Looking forward to it!</p>
+                <span class="arrow">
+                  <svg
+                    viewBox="0 0 19 20"
+                    height="20"
+                    width="19"
+                    preserveAspectRatio="xMidYMid meet"
+                    class=""
+                    version="1.1"
+                    x="0px"
+                    y="0px"
+                  >
+                    <path
+                      fill="#8696a0"
+                      d="M3.8,6.7l5.7,5.7l5.7-5.7l1.6,1.6l-7.3,7.2L2.2,8.3L3.8,6.7z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="date">
+                <p>2024-04-07</p>
+              </div>
+            </div>
+          </div>
+          <div class="app__chats-contacts_contact">
+            <div class="contact__image profile-cover">
+              <img src="images/icons8-account-96.png" alt="image" />
+            </div>
+            <div class="contact__info">
+              <div class="name"><p class="bold">Emily Johnson</p></div>
+              <div class="message">
+                <p class="message-bold">
+                  I'm good too, just catching up on some work. Did you finish
+                  that project we were working on?
+                </p>
+                <span class="notify">1</span>
+                <span class="arrow">
+                  <svg
+                    viewBox="0 0 19 20"
+                    height="20"
+                    width="19"
+                    preserveAspectRatio="xMidYMid meet"
+                    class=""
+                    version="1.1"
+                    x="0px"
+                    y="0px"
+                  >
+                    <path
+                      fill="#8696a0"
+                      d="M3.8,6.7l5.7,5.7l5.7-5.7l1.6,1.6l-7.3,7.2L2.2,8.3L3.8,6.7z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="date">
+                <p>2024-04-03</p>
+              </div>
+            </div>
+          </div>
+          <div class="app__chats-contacts_contact">
+            <div class="contact__image">
+              <img src="images/face4.avif" alt="image" />
+            </div>
+            <div class="contact__info">
+              <div class="name"><p>Liam Smith</p></div>
+              <div class="message">
+                <span class="tick">
+                  <svg
+                    viewBox="0 0 18 18"
+                    height="18"
+                    width="18"
+                    preserveAspectRatio="xMidYMid meet"
+                    class=""
+                    version="1.1"
+                    x="0px"
+                    y="0px"
+                    enable-background="new 0 0 18 18"
+                  >
+                    <path
+                      fill="#8696a0"
+                      d="M17.394,5.035l-0.57-0.444c-0.188-0.147-0.462-0.113-0.609,0.076l-6.39,8.198 c-0.147,0.188-0.406,0.206-0.577,0.039l-0.427-0.388c-0.171-0.167-0.431-0.15-0.578,0.038L7.792,13.13 c-0.147,0.188-0.128,0.478,0.043,0.645l1.575,1.51c0.171,0.167,0.43,0.149,0.577-0.039l7.483-9.602 C17.616,5.456,17.582,5.182,17.394,5.035z M12.502,5.035l-0.57-0.444c-0.188-0.147-0.462-0.113-0.609,0.076l-6.39,8.198 c-0.147,0.188-0.406,0.206-0.577,0.039l-2.614-2.556c-0.171-0.167-0.447-0.164-0.614,0.007l-0.505,0.516 c-0.167,0.171-0.164,0.447,0.007,0.614l3.887,3.8c0.171,0.167,0.43,0.149,0.577-0.039l7.483-9.602 C12.724,5.456,12.69,5.182,12.502,5.035z"
+                    ></path>
+                  </svg>
+                </span>
+                <p>Hey Liam, how's it going?</p>
+                <span class="arrow">
+                  <svg
+                    viewBox="0 0 19 20"
+                    height="20"
+                    width="19"
+                    preserveAspectRatio="xMidYMid meet"
+                    class=""
+                    version="1.1"
+                    x="0px"
+                    y="0px"
+                  >
+                    <path
+                      fill="#8696a0"
+                      d="M3.8,6.7l5.7,5.7l5.7-5.7l1.6,1.6l-7.3,7.2L2.2,8.3L3.8,6.7z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="date">
+                <p>2024-03-02</p>
+              </div>
+            </div>
+          </div>
+          <div class="app__chats-contacts_contact">
+            <div class="contact__image profile-cover">
+              <img src="images/icons8-account-96.png" alt="image" />
+            </div>
+            <div class="contact__info">
+              <div class="name"><p>Isabella Anderson</p></div>
+              <div class="message">
+                <span class="tick">
+                  <svg
+                    viewBox="0 0 18 18"
+                    height="18"
+                    width="18"
+                    preserveAspectRatio="xMidYMid meet"
+                    class=""
+                    version="1.1"
+                    x="0px"
+                    y="0px"
+                    enable-background="new 0 0 18 18"
+                  >
+                    <path
+                      fill="#53bdeb"
+                      d="M17.394,5.035l-0.57-0.444c-0.188-0.147-0.462-0.113-0.609,0.076l-6.39,8.198 c-0.147,0.188-0.406,0.206-0.577,0.039l-0.427-0.388c-0.171-0.167-0.431-0.15-0.578,0.038L7.792,13.13 c-0.147,0.188-0.128,0.478,0.043,0.645l1.575,1.51c0.171,0.167,0.43,0.149,0.577-0.039l7.483-9.602 C17.616,5.456,17.582,5.182,17.394,5.035z M12.502,5.035l-0.57-0.444c-0.188-0.147-0.462-0.113-0.609,0.076l-6.39,8.198 c-0.147,0.188-0.406,0.206-0.577,0.039l-2.614-2.556c-0.171-0.167-0.447-0.164-0.614,0.007l-0.505,0.516 c-0.167,0.171-0.164,0.447,0.007,0.614l3.887,3.8c0.171,0.167,0.43,0.149,0.577-0.039l7.483-9.602 C12.724,5.456,12.69,5.182,12.502,5.035z"
+                    ></path>
+                  </svg>
+                </span>
+                <p>
+                  I'm thinking of going hiking on Sunday morning. Would you like
+                  to join me?
+                </p>
+                <span class="arrow">
+                  <svg
+                    viewBox="0 0 19 20"
+                    height="20"
+                    width="19"
+                    preserveAspectRatio="xMidYMid meet"
+                    class=""
+                    version="1.1"
+                    x="0px"
+                    y="0px"
+                  >
+                    <path
+                      fill="#8696a0"
+                      d="M3.8,6.7l5.7,5.7l5.7-5.7l1.6,1.6l-7.3,7.2L2.2,8.3L3.8,6.7z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="date">
+                <p>2024-02-01</p>
+              </div>
+            </div>
+          </div>
+          <div class="app__chats-contacts_contact">
+            <div class="contact__image profile-cover">
+              <img src="images/icons8-account-96.png" alt="image" />
+            </div>
+            <div class="contact__info">
+              <div class="name"><p>Oliver Rodriguez</p></div>
+              <div class="message">
+                <span class="tick">
+                  <svg
+                    viewBox="0 0 18 18"
+                    height="18"
+                    width="18"
+                    preserveAspectRatio="xMidYMid meet"
+                    class=""
+                    version="1.1"
+                    x="0px"
+                    y="0px"
+                    enable-background="new 0 0 18 18"
+                  >
+                    <path
+                      fill="#53bdeb"
+                      d="M17.394,5.035l-0.57-0.444c-0.188-0.147-0.462-0.113-0.609,0.076l-6.39,8.198 c-0.147,0.188-0.406,0.206-0.577,0.039l-0.427-0.388c-0.171-0.167-0.431-0.15-0.578,0.038L7.792,13.13 c-0.147,0.188-0.128,0.478,0.043,0.645l1.575,1.51c0.171,0.167,0.43,0.149,0.577-0.039l7.483-9.602 C17.616,5.456,17.582,5.182,17.394,5.035z M12.502,5.035l-0.57-0.444c-0.188-0.147-0.462-0.113-0.609,0.076l-6.39,8.198 c-0.147,0.188-0.406,0.206-0.577,0.039l-2.614-2.556c-0.171-0.167-0.447-0.164-0.614,0.007l-0.505,0.516 c-0.167,0.171-0.164,0.447,0.007,0.614l3.887,3.8c0.171,0.167,0.43,0.149,0.577-0.039l7.483-9.602 C12.724,5.456,12.69,5.182,12.502,5.035z"
+                    ></path>
+                  </svg>
+                </span>
+                <p>
+                  Of course, I'll swing by your place after work. See you then!
+                </p>
+                <span class="arrow">
+                  <svg
+                    viewBox="0 0 19 20"
+                    height="20"
+                    width="19"
+                    preserveAspectRatio="xMidYMid meet"
+                    class=""
+                    version="1.1"
+                    x="0px"
+                    y="0px"
+                  >
+                    <path
+                      fill="#8696a0"
+                      d="M3.8,6.7l5.7,5.7l5.7-5.7l1.6,1.6l-7.3,7.2L2.2,8.3L3.8,6.7z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="date">
+                <p>2023-11-02</p>
+              </div>
+            </div>
+          </div>
+          <div class="message__wrapper">
+            <svg
+              viewBox="0 0 13 12"
+              height="12"
+              width="13"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <path
+                d="M9.54004 3.4668C9.54004 2.87891 9.39421 2.33887 9.10254 1.84668C8.81543 1.34993 8.4235 0.958008 7.92676 0.670898C7.43457 0.379232 6.89681 0.233398 6.31348 0.233398C5.72559 0.233398 5.18327 0.379232 4.68652 0.670898C4.19434 0.958008 3.80241 1.34993 3.51074 1.84668C3.22363 2.33887 3.08008 2.87891 3.08008 3.4668V4.7041C3.05273 4.71322 2.99805 4.73828 2.91602 4.7793C2.61979 4.9388 2.39421 5.16439 2.23926 5.45605C2.15267 5.61556 2.09115 5.79102 2.05469 5.98242C2.01823 6.17383 2 6.45866 2 6.83691V9.25C2 9.62826 2.01823 9.91309 2.05469 10.1045C2.09115 10.2959 2.15267 10.4714 2.23926 10.6309C2.39421 10.9225 2.61979 11.1481 2.91602 11.3076C3.07096 11.3942 3.24414 11.4557 3.43555 11.4922C3.63151 11.5286 3.91634 11.5469 4.29004 11.5469H8.33008C8.70378 11.5469 8.98633 11.5286 9.17773 11.4922C9.3737 11.4557 9.54915 11.3942 9.7041 11.3076C9.99577 11.1527 10.2214 10.9271 10.3809 10.6309C10.4674 10.4714 10.529 10.2959 10.5654 10.1045C10.6019 9.91309 10.6201 9.62826 10.6201 9.25V6.83691C10.6201 6.45866 10.6019 6.17383 10.5654 5.98242C10.529 5.79102 10.4674 5.61556 10.3809 5.45605C10.2214 5.15983 9.99577 4.93424 9.7041 4.7793C9.62207 4.73828 9.56738 4.71322 9.54004 4.7041V3.4668ZM4.37207 3.4668C4.37207 3.11589 4.45866 2.79232 4.63184 2.49609C4.80501 2.19531 5.03971 1.95833 5.33594 1.78516C5.63672 1.61198 5.96257 1.52539 6.31348 1.52539C6.66439 1.52539 6.98796 1.61198 7.28418 1.78516C7.5804 1.95833 7.8151 2.19531 7.98828 2.49609C8.16146 2.79232 8.24805 3.11589 8.24805 3.4668V4.54004H4.37207V3.4668Z"
+              ></path>
+            </svg>
+            <p>
+              Your personal messages are <span> end to end encryption</span>
+            </p>
           </div>
         </div>
       </div>

@@ -3,11 +3,18 @@
 :root {
   --background: #eae6df;
   --backgroundDeeper: #d1d7db;
+  --profileBackground: #e5e5e5;
   --navBar-background: #f0f2f5;
   --navbar-icon-color: #5c5c5c;
+  --contact-hover-color: #e9edef;
   --unread-marker-background: #25d366;
+  --date-color: #667781;
+  --profile-cover-color: #ced7db;
   --white: #fff;
   --darkGrey: #3d3d3d;
+  --tick-unread: #8696a0;
+  --tick-read: #53bdeb;
+  --message-bold: #3b4a54;
 }
 * {
   margin: 0;
@@ -48,6 +55,37 @@ body::before {
   z-index: 2;
   background-color: #efeae2;
 }
+
+.hover:hover {
+  background-color: var(--backgroundDeeper);
+}
+
+.active {
+  background-color: var(--navBar-background);
+}
+
+.profile-cover {
+  background-color: var(--profile-cover-color);
+}
+
+.bold {
+  font-weight: 600;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bbb; /* Lighter color */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999; /* Slightly darker color on hover */
+}
+
+/* scrollbar */
 
 /* animations */
 

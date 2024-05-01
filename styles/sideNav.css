@@ -6,6 +6,7 @@
   background-color: var(--navBar-background);
   width: 60px;
   height: 100%;
+  border-right: 1px solid #e9edef;
 }
 .app__sideNav-top,
 .app__sideNav-bottom {
@@ -25,23 +26,23 @@
   align-items: center;
   justify-content: center;
   transition: all 0.2s;
+}
+
+.app__sideNav .app__sideNav-top_btn,
+.app__sideNav .app__sideNav-bottom_btn {
   margin-bottom: 0.6rem;
 }
 
-.app__sideNav-top_btn:hover,
-.app__sideNav-bottom_btn:hover {
-  background-color: var(--backgroundDeeper);
-}
 .app__sideNav-top_btn,
 .app__sideNav-bottom_btn svg {
   color: var(--navbar-icon-color);
 }
 
-.app__sideNav-top_btn:first-child {
+.app__sideNav .app__sideNav-top_btn:first-child {
   position: relative;
   background-color: var(--backgroundDeeper);
 }
-.app__sideNav-top_btn:first-child::after {
+.app__sideNav .app__sideNav-top_btn:first-child::after {
   position: absolute;
   content: "35";
   top: -6px;
@@ -69,6 +70,7 @@
   transition: all 0.3s ease-in-out;
   pointer-events: none;
   z-index: 10;
+  transition-delay: 0.3s;
 }
 .app__sideNav-popup span {
   color: var(--white);
@@ -79,8 +81,9 @@
 .app__sideNav-bottom_btn:hover .app__sideNav-popup {
   opacity: 1;
   visibility: visible;
-  -webkit-animation: scale-up-left 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: scale-up-left 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation: scale-up-left 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 0.3s
+    both;
+  animation: scale-up-left 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 0.3s both;
 }
 
 .app__sideNav-hr {
@@ -96,6 +99,7 @@
   padding: none;
   width: 40px;
   height: 40px;
+  background-color: var(--profileBackground);
 }
 .app__sideNav-bottom_btn.profile img {
   width: 34px;
