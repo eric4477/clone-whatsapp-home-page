@@ -219,6 +219,7 @@
 
 .app__chats-contacts_contact:hover .arrow {
   min-width: 2rem;
+  /* margin-left: 1rem; */
 }
 .app__chats-contacts_contact:hover .arrow svg {
   right: 0.3rem;
