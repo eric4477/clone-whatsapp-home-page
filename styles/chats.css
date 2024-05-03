@@ -147,6 +147,10 @@
   border-bottom: 1px solid var(--contact-hover-color);
 }
 
+.app__chats-contacts_contact .contact__info .name p {
+  color: var(--message);
+}
+
 .contact__info .message .tick {
   display: flex;
   align-items: center;

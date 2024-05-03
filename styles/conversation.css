@@ -1,0 +1,61 @@
+.app__conversation {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #efeae2;
+}
+
+.app__conversation .header {
+  height: 59px;
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.app__conversation .header .left-header {
+  display: flex;
+  align-items: center;
+  padding-left: 1.2rem;
+}
+
+.app__conversation .header .left-header .profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 0.8rem;
+  color: var(--message);
+}
+
+.app__conversation .header .left-header .profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.app__conversation .header .left-header .name span {
+  font-size: 14px;
+}
+
+.app__conversation .header .right-header {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.app__conversation .header .right-header .search {
+  margin-right: 0.6rem;
+}
+.app__conversation .header .right-header .search,
+.app__conversation .header .right-header .menu {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
