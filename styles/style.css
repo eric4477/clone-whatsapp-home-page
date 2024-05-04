@@ -74,6 +74,10 @@ body::before {
   font-weight: 600;
 }
 
+.max-width {
+  max-width: 320px;
+}
+
 /* scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
