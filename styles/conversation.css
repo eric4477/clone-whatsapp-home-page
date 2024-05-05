@@ -6,6 +6,7 @@
   justify-content: space-between;
   background-color: #efeae2;
   position: relative;
+  min-width: 450px;
 }
 
 .app__conversation .header {
@@ -135,7 +136,7 @@
   justify-content: flex-start;
   box-shadow: 0 2px 2px -3px #000;
   position: relative;
-  max-width: 60%;
+  /* max-width: 60%; */
 }
 
 .app__conversation-chat .end:last-child {
@@ -189,8 +190,8 @@
 }
 
 .app__conversation-chat .react svg {
-  width: calc(100% - 7px);
-  height: calc(100% - 7px);
+  width: calc(100% - 5px);
+  height: calc(100% - 6px);
 }
 
 .app__conversation-chat .sender:hover .arrow {
@@ -208,6 +209,11 @@
   width: 100%;
   margin: 0.2rem 0;
   font-weight: 400;
+  max-width: 400px;
+}
+
+.app__conversation-chat .sender .message.max-width {
+  max-width: 320px;
 }
 
 .app__conversation-chat .sender .time {
@@ -229,4 +235,51 @@
   margin-left: 0.1rem;
   padding-bottom: 3px;
   color: #53bdeb;
+}
+
+.app__conversation .footer {
+  height: 62px;
+  padding: 5px 16px;
+  background-color: var(--navBar-background);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.app__conversation .footer .buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  gap: 15px;
+}
+
+.app__conversation .footer .buttons span {
+  cursor: pointer;
+}
+
+.app__conversation .footer .input-wrapper {
+  min-height: 20px;
+  margin: 5px;
+  flex-grow: 1;
+  border-radius: 9px;
+}
+
+.app__conversation .footer .input-wrapper input {
+  font-size: 15px;
+  line-height: 20px;
+  width: 100%;
+  height: 100%;
+  border-radius: 9px;
+  padding: 12px 12px;
+  border: none;
+  outline: none;
+}
+
+.app__conversation .footer .button {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  cursor: pointer;
 }

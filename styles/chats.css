@@ -6,6 +6,7 @@
   background-color: var(--white);
   padding: 0.6rem 0;
   position: relative;
+  min-width: 400px;
 }
 
 .app__chats-header {
@@ -246,4 +247,11 @@
 .message__wrapper span {
   color: #027eb5;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+  .app__chats {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
 }

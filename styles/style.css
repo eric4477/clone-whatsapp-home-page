@@ -74,21 +74,17 @@ body::before {
   font-weight: 600;
 }
 
-.max-width {
-  max-width: 320px;
-}
-
 /* scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #bbb; /* Lighter color */
+  background: #bbb;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #999; /* Slightly darker color on hover */
+  background: #999;
 }
 
 /* scrollbar */
